@@ -1,0 +1,285 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.search-container {
+  max-width: 600px;
+  margin: 25px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.search-container input[type="text"] {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  color: #4b00ff;
+  padding: 12px 60px 12px 15px; /* space for the button inside */
+  border: 2px solid #4b00ff;
+  border-radius: 30px;
+  outline: none;
+  background-color: white;
+}
+
+.search-container button {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #4b00ff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #3b00cc;
+}
+
+
+#desc {
+  margin: 20px 10vw;
+}
+
+.thumbnail{
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* space between image and text */
+}
+
+
+.movieName {
+    font-size: 25px;
+    color: #e4c51c;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  
+
+.img {
+  height: 400px;
+  width: 300px;
+  border: 2px solid #e4c51c;
+  border-radius: 20px;
+  /* object-fit: contain; */
+}
+
+.description {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.plot{
+    color: azure;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 600px;
+}
+
+.rating{
+    height: 50px;
+    /* width: 150px; */
+    border-radius: 15px;
+    color: black;
+    margin: 30px;
+    background: #e4c51c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+}
+
+.duration{
+    height: 50px;
+    /* width: 150px; */
+    border-radius: 15px;
+    color: black;
+    margin: 30px;
+    background: #e4471c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+}
+
+.release{
+  height: 50px;
+  /* width: 200px; */
+  border-radius: 15px;
+  color: black;
+  margin: 30px;
+  background: #1c26e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+}
+
+.genre{
+  height: 50px;
+  /* width: 200px; */
+  border-radius: 15px;
+  color: black;
+  margin: 30px;
+  background: #5be41c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+}
+
+.boxoffice{
+  color: aliceblue;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.Info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  margin: 30px 10vw;
+  background-color: #1c1c1c;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.Info > div {
+  background-color: #2c2c2c;
+  border-radius: 12px;
+  padding: 15px 20px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-left: 5px solid #e4c51c;
+}
+
+.Info > div:hover {
+  background-color: #3a3a3a;
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    margin: 20px 15px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-container input[type="text"] {
+    font-size: 16px;
+    padding: 12px 50px 12px 15px;
+    border-radius: 25px;
+  }
+
+  .search-container button {
+    right: 10px;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 18px;
+  }
+
+  .thumbnail {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img {
+    width: 90vw;
+    height: auto;
+    max-height: 400px;
+  }
+
+  .description {
+    width: 90vw;
+    align-items: center;
+    text-align: center;
+  }
+
+  .movieName {
+    font-size: 22px;
+    margin-left: 0;
+  }
+
+  .plot {
+    font-size: 15px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .rating,
+  .duration,
+  .release,
+  .genre {
+    width: 90%;
+    max-width: 90%;
+    margin: 15px auto;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .boxoffice {
+    font-size: 18px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .Info {
+    margin: 20px 5vw;
+    padding: 15px;
+  }
+
+  .Info > div {
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-container input[type="text"] {
+    font-size: 14px;
+    padding: 10px 45px 10px 12px;
+  }
+
+  .search-container button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .movieName {
+    font-size: 20px;
+  }
+
+  .plot {
+    font-size: 14px;
+  }
+
+  .rating,
+  .duration,
+  .release,
+  .genre {
+    font-size: 15px;
+  }
+
+  .Info > div {
+    font-size: 15px;
+  }
+}
+
