@@ -4,7 +4,7 @@ desc.style.display = 'none';
 
 async function getData(name) {
     try {
-        let raw = await fetch(`http://www.omdbapi.com/?t=${name}&apikey=736ef7ac`);
+        let raw = await fetch(`https://www.omdbapi.com/?t=${name}&apikey=736ef7ac`); // HTTPS URL
         let data = await raw.json();
         desc.style.display = 'block';
         console.log(data);
